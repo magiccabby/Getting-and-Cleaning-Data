@@ -24,7 +24,7 @@ This is a repository for the course project of "Getting and Cleaning Data" throu
 * Open RStudio and input the following two commands:
 	
 		setwd("mydir/UCI HAR Dataset/")
-    		source("run_analysis.R")
+    	source("run_analysis.R")
     
 * Read the generated tidy data set by inputting this command in RStudio: 
 	 
