@@ -4,13 +4,13 @@ This is a repository for the course project of "Getting and Cleaning Data" throu
 
 ### Files
 
-"CodeBook.md" describes the variables, the data, and any transformations or work that have been performed to clean up the data.
+* "CodeBook.md" describes the variables, the data, and any transformations or work that have been performed to clean up the data.
 
-"run_analysis.R" contains the R script for performing anaylysis in 5 steps.
+* "run_analysis.R" contains the R script for performing anaylysis in 5 steps.
 
-"merged_data_set.txt" contains the data set that has been merged from training and testing data in step 4.  
+* "merged_data_set.txt" contains the data set that has been merged from training and testing data in step 4.  
 
-"averaged_data_set.txt" contains the tidy data set generated in step 5, with the average of each variable for each activity and each subject.
+* "averaged_data_set.txt" contains the tidy data set generated in step 5, with the average of each variable for each activity and each subject.
 
 
 ### How dose it work
