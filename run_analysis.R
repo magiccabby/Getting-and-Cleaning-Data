@@ -9,20 +9,20 @@
 
 
 ## 1. Merges the training and the test sets to create one data set.
-tmp1 <- read.table("UCI HAR Dataset/train/subject_train.txt")
-tmp2 <- read.table("UCI HAR Dataset/test/subject_test.txt")
+tmp1 <- read.table("train/subject_train.txt")
+tmp2 <- read.table("test/subject_test.txt")
 all_subject <- rbind(tmp1, tmp2)
-tmp1 <- read.table("UCI HAR Dataset/train/X_train.txt")
-tmp2 <- read.table("UCI HAR Dataset/test/x_test.txt")
+tmp1 <- read.table("train/X_train.txt")
+tmp2 <- read.table("test/x_test.txt")
 all_X <- rbind(tmp1, tmp2)
-tmp1 <- read.table("UCI HAR Dataset/train/y_train.txt")
-tmp2 <- read.table("UCI HAR Dataset/test/y_test.txt")
+tmp1 <- read.table("train/y_train.txt")
+tmp2 <- read.table("test/y_test.txt")
 all_y <- rbind(tmp1, tmp2)
 rm(tmp1, tmp2)
 
 ## 2. Extracts only the measurements on the mean and standard deviation for each 
 #   measurement.
-features <- read.table("UCI HAR Dataset/features.txt")
+features <- read.table("features.txt")
 ind <- grep("-(mean|std)\\(\\)", features[, 2], ignore.case = TRUE)
 features <- features[ind, 2]
 features <- gsub("\\(|\\)", "", features)
@@ -30,7 +30,7 @@ all_X <- all_X[,ind]
 
 
 ## 3. Uses descriptive activity names to name the activities in the data set
-activities <- read.table("UCI HAR Dataset/activity_labels.txt")
+activities <- read.table("activity_labels.txt")
 all_y <- activities[all_y[, 1], 2]
 
 
