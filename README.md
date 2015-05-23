@@ -15,15 +15,15 @@ This is a repository for the course project of "Getting and Cleaning Data" throu
 
 ### How dose it work
 
-* Download and unzip the original data set (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) into a folder on your local drive, say "mydir\".
+* Download and unzip the original data set (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) into a folder on your local drive, say "mydir/UCI HAR Dataset/".
 
 
-* Copy "run_analysis.R" in to folder "mydir\".
+* Copy "run_analysis.R" in to folder "mydir/UCI HAR Dataset/".
 
 
 * Open RStudio and input the following two commands:
 
-		setwd("mydir\")
+	setwd("mydir/UCI HAR Dataset/")
     	source("run_analysis.R")
     
 * Read the generated tidy data set by inputting this command in RStudio: 
